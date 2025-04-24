@@ -34,6 +34,3 @@ def proxy_video():
     except requests.RequestException as e:
         return jsonify({"error": f"请求失败：{str(e)}"}), 500
 
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
